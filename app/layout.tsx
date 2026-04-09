@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -13,7 +15,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
-      <body className="min-h-screen">{children}</body>
+      <head>
+        {/* 百度统计 - 替换为你的统计 ID */}
+        <Script
+          src="https://hm.baidu.com/hm.js?YOUR_BAIDU_ID_HERE"
+          strategy="afterInteractive"
+        />
+      </head>
+      <body className="min-h-screen">
+        {children}
+      </body>
+      {/* 谷歌分析 - 替换 G-XXXXXXXXXX 为你的 GA4 测量 ID */}
+      <GoogleAnalytics gaId="G-XXXXXXXXXX" />
     </html>
   );
 }
