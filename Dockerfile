@@ -10,8 +10,8 @@ WORKDIR /app
 # Copy package files
 COPY package.json package-lock.json ./
 
-# Install dependencies
-RUN npm ci --only=production
+# Install ALL dependencies (including devDependencies for build)
+RUN npm ci
 
 # Rebuild the source code only when needed
 FROM base AS builder
@@ -37,8 +37,8 @@ COPY --from=builder /app/.next/static ./.next/static
 
 USER nextjs
 
-EXPOSE 3000
+ENV PORT=3000
 
-ENV PORT 3000
+EXPOSE 3000
 
 CMD ["node", "server.js"]
