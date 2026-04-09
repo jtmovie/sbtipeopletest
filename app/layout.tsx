@@ -25,8 +25,8 @@ export default function RootLayout({
       <body className="min-h-screen">
         {children}
       </body>
-      {/* 谷歌分析 - 替换 G-XXXXXXXXXX 为你的 GA4 测量 ID */}
-      <GoogleAnalytics gaId="G-XXXXXXXXXX" />
+      {/* 谷歌分析 - GA4 测量 ID */}
+      <GoogleAnalytics gaId="G-9KRX119DR6" />
     </html>
   );
 }
