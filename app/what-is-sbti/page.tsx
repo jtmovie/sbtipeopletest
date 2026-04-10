@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import AdSlot from '@/components/AdSlot';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
 import { constructMetadata } from '@/lib/metadata';
@@ -47,10 +46,6 @@ export default function WhatIsSbtiPage() {
           </p>
         </div>
       </article>
-
-      <div className="mt-8">
-        <AdSlot id="what-is-sbti-mid" />
-      </div>
 
       <section className="mt-8 grid gap-6 md:grid-cols-2">
         <div className="rounded-[2rem] border border-gray-200 bg-white p-8">

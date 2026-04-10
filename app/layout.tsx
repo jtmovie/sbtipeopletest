@@ -31,14 +31,6 @@ export default function RootLayout({
             strategy="afterInteractive"
           />
         ) : null}
-        {siteConfig.adsenseClient ? (
-          <Script
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${siteConfig.adsenseClient}`}
-            crossOrigin="anonymous"
-            strategy="afterInteractive"
-          />
-        ) : null}
       </head>
       <body className="min-h-screen">
         <JsonLd data={getWebsiteJsonLd()} />

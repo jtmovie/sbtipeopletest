@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import AdSlot from '@/components/AdSlot';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FAQList from '@/components/FAQList';
 import JsonLd from '@/components/JsonLd';
@@ -34,17 +33,13 @@ export default function FaqPage() {
           SBTI 常见问题
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-700">
-          这页主要回答从搜索进来的高频问题。它本身也是一个内容承接页，适合挂 FAQ schema，也适合后续放低干扰广告位。
+          这页主要回答从搜索进来的高频问题。它本身也是一个内容承接页，适合挂 FAQ schema，并集中回答“是什么、怎么测、怎么看结果”这类基础问题。
         </p>
       </section>
 
       <section className="mt-8">
         <FAQList />
       </section>
-
-      <div className="mt-8">
-        <AdSlot id="faq-mid" />
-      </div>
 
       <section className="mt-8 rounded-[2rem] border border-gray-200 bg-gray-900 p-8 text-white">
         <h2 className="text-2xl font-bold">如果 FAQ 还不够</h2>

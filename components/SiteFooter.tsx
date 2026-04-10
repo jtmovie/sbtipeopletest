@@ -35,7 +35,7 @@ export default function SiteFooter() {
           </p>
           <div className="mt-4 space-y-3 text-sm leading-7 text-gray-600">
             <p>本测试仅供娱乐，不替代心理诊断。</p>
-            <p>Google 广告位会优先放在内容页和类型页，不打断测试流程。</p>
+            <p>站内内容以测试体验和结果阅读为优先，不插入干扰式模块。</p>
             <p>原作者署名保留：B 站 @蛆肉儿串儿。</p>
           </div>
         </div>

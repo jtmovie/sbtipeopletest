@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import AdSlot from '@/components/AdSlot';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
 import { constructMetadata } from '@/lib/metadata';
@@ -88,10 +87,6 @@ export default function SbtiVsMbtiPage() {
           </table>
         </div>
       </section>
-
-      <div className="mt-8">
-        <AdSlot id="sbti-vs-mbti-mid" />
-      </div>
     </main>
   );
 }

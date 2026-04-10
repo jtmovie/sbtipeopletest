@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import AdSlot from '@/components/AdSlot';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
 import { constructMetadata } from '@/lib/metadata';
@@ -128,11 +127,6 @@ export default async function TypeDetailPage({ params }: PageProps) {
           </div>
         </aside>
       </section>
-
-      <div className="mt-8">
-        <AdSlot id={`type-${type.slug}-mid`} />
-      </div>
-
       <section className="mt-10 rounded-[2rem] border border-gray-200 bg-white p-8">
         <h2 className="text-2xl font-bold text-gray-900">你也可以顺手看看这些人格</h2>
         <div className="mt-6 grid gap-4 md:grid-cols-3">

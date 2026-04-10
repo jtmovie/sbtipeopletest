@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import AdSlot from '@/components/AdSlot';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import JsonLd from '@/components/JsonLd';
 import { constructMetadata } from '@/lib/metadata';
@@ -36,11 +35,6 @@ export default function ResultsPage() {
           这里收录了当前版本的全部 SBTI 人格类型。你可以先看热门结果，再决定要不要直接去测，或者先读具体人格档案。
         </p>
       </div>
-
-      <div className="mt-8">
-        <AdSlot id="results-top" />
-      </div>
-
       <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {types.map((type) => (
           <Link

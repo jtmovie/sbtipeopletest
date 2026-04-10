@@ -5,7 +5,6 @@ export const siteConfig = {
     'SBTI 人格测试，一个偏抽象、偏网络语境的趣味人格测试入口。支持查看人格类型、结果解析和热门人格档案。',
   url: 'https://sbti.unun.dev',
   locale: 'zh_CN',
-  adsenseClient: process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? '',
 };
 
 export const defaultKeywords = [
