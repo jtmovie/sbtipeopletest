@@ -8,7 +8,7 @@ export default function SiteFooter() {
         <div>
           <p className="text-lg font-semibold text-gray-900">SBTI 人格测试</p>
           <p className="mt-4 max-w-md text-sm leading-7 text-gray-600">
-            这是一个偏网络语境的趣味人格测试站点。首页负责承接搜索，测试页负责转化，类型页和解释页负责承接更长尾的自然流量。
+            这是一个偏网络语境的趣味人格测试站点。
           </p>
         </div>
 

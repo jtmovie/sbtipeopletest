@@ -70,7 +70,7 @@ export default function Home() {
             Search Intent
           </p>
           <h2 className="mt-3 text-3xl font-bold text-gray-900">
-            这个站主要承接哪几类搜索
+            这个站主要向您解释什么是 SBTI，以及为什么会有这么多人搜它
           </h2>
           <div className="mt-5 grid gap-3 sm:grid-cols-2">
             {[
@@ -131,7 +131,7 @@ export default function Home() {
         <div className="rounded-[2rem] border border-gray-200 bg-gray-900 p-8 text-white">
           <h2 className="text-2xl font-bold">准备好了就去测</h2>
           <p className="mt-4 text-sm leading-7 text-gray-300">
-            这个站最核心的页面仍然是测试页。首页负责承接搜索和解释，真正的结果在你答完题之后才会揭晓。
+            真正的结果在你答完题之后才会揭晓。
           </p>
           <Link
             href="/test"

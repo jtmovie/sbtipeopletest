@@ -54,7 +54,7 @@ export default function SbtiVsMbtiPage() {
         <aside className="rounded-[2rem] border border-gray-200 bg-gray-900 p-8 text-white">
           <h2 className="text-2xl font-bold">适合谁先看这一页</h2>
           <p className="mt-4 text-sm leading-7 text-gray-300">
-            如果你是从 “SBTI 和 MBTI 到底差在哪” 这种问题搜进来的，这页就是给你的。看完以后再决定是否去测，会更容易理解这套产品为什么能传播。
+            SBTI 和 MBTI 到底差在哪？看完以后再决定是否去测。
           </p>
           <Link
             href="/test"

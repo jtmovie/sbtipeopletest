@@ -42,22 +42,16 @@ export default function WhatIsSbtiPage() {
             这套测试的吸引力主要来自三个层面：第一，结果命名非常强；第二，测试题本身带有明显的中文互联网语境；第三，测完以后天然适合继续搜索“我这个人格是什么意思”。
           </p>
           <p>
-            如果你只是想知道这个词是什么意思，那么最简单的结论是：SBTI 是一个娱乐型人格测试热词。它的价值在传播和表达，不在心理诊断。
+            如果你只是想知道这个词是什么意思，那么最简单的结论是：SBTI 是一个娱乐型人格测试热词。
           </p>
         </div>
       </article>
 
-      <section className="mt-8 grid gap-6 md:grid-cols-2">
+      <section className="mt-8">
         <div className="rounded-[2rem] border border-gray-200 bg-white p-8">
           <h2 className="text-2xl font-bold text-gray-900">为什么会有人搜它</h2>
           <p className="mt-4 text-sm leading-7 text-gray-600">
             因为它兼具“测试”和“内容标签”两种属性。很多人不是先做测试，而是先搜结果名、先搜解释、先搜和 MBTI 的区别，再回头测试。
-          </p>
-        </div>
-        <div className="rounded-[2rem] border border-gray-200 bg-gray-50 p-8">
-          <h2 className="text-2xl font-bold text-gray-900">这里的 SBTI 不是哪个 SBTi</h2>
-          <p className="mt-4 text-sm leading-7 text-gray-600">
-            搜索时经常会和气候领域的 Science Based Targets initiative 缩写冲突，所以内容页里需要明确消歧。这个站指的是网络流行人格测试语境下的 SBTI。
           </p>
         </div>
       </section>
