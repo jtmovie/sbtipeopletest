@@ -3,7 +3,6 @@
 import { useState, useMemo, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
-import { Question } from '@/lib/types';
 import { questions, specialQuestions, DRUNK_TRIGGER_Q1_ID } from '@/lib/data';
 import QuestionCard from './QuestionCard';
 

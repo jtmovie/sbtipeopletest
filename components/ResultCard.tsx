@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { RawResult } from '@/lib/types';
 import { TYPE_IMAGES } from '@/lib/data';
@@ -28,10 +29,12 @@ export default function ResultCard({ result }: { result: RawResult }) {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.4 }}
         >
-          <img
+          <Image
             src={imageSrc}
             alt={finalType.cn}
-            className="w-full h-full object-cover"
+            fill
+            sizes="160px"
+            className="object-cover"
           />
         </motion.div>
       )}

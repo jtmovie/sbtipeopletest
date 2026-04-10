@@ -1,5 +1,12 @@
 import { RawResult, RankedType, TypeData } from './types';
-import { dimensionOrder, NORMAL_TYPES, TYPE_LIBRARY, DRUNK_TRIGGER_Q1_ID, DRUNK_TRIGGER_Q2_ID } from './data';
+import {
+  dimensionOrder,
+  NORMAL_TYPES,
+  TYPE_LIBRARY,
+  DRUNK_TRIGGER_Q1_ID,
+  DRUNK_TRIGGER_Q2_ID,
+  questions,
+} from './data';
 
 function sumToLevel(score: number): 'L' | 'M' | 'H' {
   if (score <= 3) return 'L';
@@ -18,14 +25,17 @@ function parsePattern(pattern: string): number[] {
 export function computeResult(answers: Record<string, number>): RawResult {
   const rawScores: Record<string, number> = {};
   const levels: Record<string, 'L' | 'M' | 'H'> = {};
+  const questionDimensionMap = Object.fromEntries(
+    questions
+      .filter((question) => question.dim)
+      .map((question) => [question.id, question.dim!]),
+  ) as Record<string, string>;
 
   dimensionOrder.forEach(dim => { rawScores[dim] = 0; });
 
   Object.entries(answers).forEach(([qId, value]) => {
     if (qId === DRUNK_TRIGGER_Q1_ID || qId === DRUNK_TRIGGER_Q2_ID) return;
-    const dim = dimensionOrder.find(d =>
-      qId.startsWith('q') && qId.match(/^q(\d+)$/)
-    );
+    const dim = questionDimensionMap[qId];
     if (dim) rawScores[dim] += Number(value);
   });
 

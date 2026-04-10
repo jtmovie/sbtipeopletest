@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { RawResult } from '@/lib/types';
-import { dimensionOrder, dimensionMeta, DIM_EXPLANATIONS } from '@/lib/data';
+import { dimensionMeta, DIM_EXPLANATIONS } from '@/lib/data';
 
 const GROUPS = [
   { label: '自我模型', keys: ['S1', 'S2', 'S3'] },

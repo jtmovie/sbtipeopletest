@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero({ onStart }: { onStart: () => void }) {
   return (
-    <section className="min-h-screen flex flex-col justify-center px-6 py-16 max-w-[640px] mx-auto">
+    <section className="min-h-[calc(100vh-88px)] flex flex-col justify-center px-6 py-16 max-w-[680px] mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -24,8 +24,8 @@ export default function Hero({ onStart }: { onStart: () => void }) {
         </h1>
 
         <p className="text-gray-500 text-base leading-relaxed mb-4">
-          MBTI 已经过时了。<br />
-          这是一个更真实、更能暴露你的趣味性格测试。
+          进入测试前，先把脑内滤镜放一边。<br />
+          这套题本来就不是来做正经人格报告的。
         </p>
 
         <p className="text-gray-400 text-sm leading-relaxed mb-10">
