@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import AdSlot from '@/components/AdSlot';
 import FAQList from '@/components/FAQList';
 import { constructMetadata } from '@/lib/metadata';
 import { getAllTypeEntries } from '@/lib/type-catalog';
@@ -65,7 +64,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-16 grid gap-6 lg:grid-cols-[1fr_0.9fr]">
+      <section className="mt-16">
         <div className="rounded-[2rem] border border-gray-200 bg-white p-8">
           <p className="text-xs font-medium uppercase tracking-[0.24em] text-gray-400">
             Search Intent
@@ -91,7 +90,6 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <AdSlot id="home-lower" label="首页下半区广告位预留" />
       </section>
 
       <section className="mt-16">
